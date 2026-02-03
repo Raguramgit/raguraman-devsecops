@@ -7,183 +7,456 @@ Tasks combine **hands-on execution** with **necessary understanding**
 to prepare you for real production environments.
 
 ---
+# Module 2 – Tasks | Linux & Shell Scripting
 
-## Task 1 – Linux Server Setup & Secure Access
+These 25 tasks cover **everything taught in Module-2**.
+Each task focuses on **one clear concept** so learning feels simple and structured.
 
-### Objective
-Understand how Linux servers are created, accessed, and secured in real projects.
-
-### What You Need to Do
-- Launch a Linux VM (local or cloud)
-- Connect to the VM using SSH
-- Configure key-based authentication
-- Change SSH port from default to a custom port
-- Verify open ports before and after the change
-
-### Deliverables
-- SSH connection output
-- SSH configuration changes
-- Open ports verification
-
-### Interview Connect
-Be ready to answer:
-- How do DevOps engineers access servers securely?
-- Why is key-based authentication preferred?
+Complete tasks in sequence.
 
 ---
 
-## Task 2 – Linux Architecture & File System
+## Task 1 – Linux Introduction & OS Details
 
 ### Objective
-Understand Linux internals and filesystem layout used in production servers.
+Understand Linux as an operating system.
 
 ### What You Need to Do
-- Explore and list contents of:
-  - `/etc`
-  - `/var/log`
-  - `/proc`
-  - `/opt`
-- Identify:
-  - One configuration file
-  - One service log file
-- Monitor a log file in real time
-- Check disk usage on the system
+- Check Linux distribution and version
+- Check kernel version
+- Explain why Linux is preferred for servers
 
 ### Deliverables
-- Directory listing outputs
+- Command outputs
+- Short explanation
+
+### Interview Connect
+- Why Linux dominates DevOps environments?
+
+---
+
+## Task 2 – Basic Linux Navigation
+
+### Objective
+Navigate the Linux filesystem confidently.
+
+### What You Need to Do
+- Use `pwd`, `ls`, `cd`
+- Create directories and files
+- Remove files and directories
+
+### Deliverables
+- Command outputs
+
+### Interview Connect
+- Difference between relative and absolute paths?
+
+---
+
+## Task 3 – File Operations
+
+### Objective
+Manage files like a DevOps engineer.
+
+### What You Need to Do
+- Copy and move files
+- Rename files
+- Use wildcard operations
+
+### Deliverables
+- Command outputs
+
+### Interview Connect
+- How do you safely move files on servers?
+
+---
+
+## Task 4 – Viewing Files
+
+### Objective
+Read files efficiently on servers.
+
+### What You Need to Do
+- Use `cat`, `less`, `more`
+- Use `head` and `tail`
+
+### Deliverables
+- File viewing output
+
+### Interview Connect
+- Why is `less` preferred over `cat` for logs?
+
+---
+
+## Task 5 – File Editing (Vim & Nano)
+
+### Objective
+Edit files on Linux servers.
+
+### What You Need to Do
+- Edit a file using `nano`
+- Edit the same file using `vim`
+- Save changes safely
+
+### Deliverables
+- File before/after proof
+
+### Interview Connect
+- Why vim is commonly used in production?
+
+---
+
+## Task 6 – Linux Directory Structure
+
+### Objective
+Understand Linux filesystem layout.
+
+### What You Need to Do
+- Explore `/bin`, `/sbin`, `/etc`
+- Explore `/var`, `/var/log`
+- Explore `/home`, `/opt`, `/tmp`, `/proc`
+
+### Deliverables
+- Directory listings
+
+### Interview Connect
+- Where do logs and configs live?
+
+---
+
+## Task 7 – Log Monitoring
+
+### Objective
+Monitor logs in real time.
+
+### What You Need to Do
+- Identify a system log file
+- Monitor it using `tail -f`
+
+### Deliverables
 - Log monitoring output
-- Disk usage output
 
 ### Interview Connect
-Be ready to answer:
-- Where do Linux logs and configs live?
-- Difference between kernel and user space?
+- How do you debug issues using logs?
 
 ---
 
-## Task 3 – Core Linux Commands & Process Management
+## Task 8 – Virtual Machine Basics
 
 ### Objective
-Perform day-to-day Linux operations required in DevOps roles.
+Understand VM components.
 
 ### What You Need to Do
-- Perform file and directory operations
-- View and edit files
-- Monitor running processes
-- Stop processes gracefully and forcefully
-- Identify disk-heavy directories
+- Identify CPU, RAM, Disk, Network of VM
+- Explain ports and networking at high level
 
 ### Deliverables
-- Command outputs/screenshots
-- Process monitoring output
-- Disk usage output
+- VM details output
 
 ### Interview Connect
-Be ready to answer:
-- How do you find and stop a misbehaving process?
-- How do you identify disk usage issues?
+- VM vs physical server?
 
 ---
 
-## Task 4 – Users, Groups & Permissions
+## Task 9 – SSH Access
 
 ### Objective
-Apply Linux security concepts related to users and permissions.
+Access Linux servers securely.
 
 ### What You Need to Do
-- Create users and groups
-- Assign users to groups
-- Create a shared directory
-- Configure permissions for group access
-- Trigger and fix a permission denied issue
-- Apply sticky bit to a shared directory
+- Connect to VM using SSH
+- Verify SSH port
 
 ### Deliverables
-- Permission listings
+- SSH login proof
+
+### Interview Connect
+- What is SSH?
+
+---
+
+## Task 10 – SSH Key-Based Authentication
+
+### Objective
+Secure server access.
+
+### What You Need to Do
+- Configure SSH key-based authentication
+- Disable password login (if possible)
+
+### Deliverables
+- SSH config proof
+
+### Interview Connect
+- Why key-based auth is more secure?
+
+---
+
+## Task 11 – Elastic IP Association
+
+### Objective
+Understand static IPs in cloud.
+
+### What You Need to Do
+- Allocate Elastic IP
+- Associate with instance
+- Verify connectivity
+
+### Deliverables
+- Elastic IP proof
+
+### Interview Connect
+- Why Elastic IP is used?
+
+---
+
+## Task 12 – curl Usage
+
+### Objective
+Test HTTP endpoints.
+
+### What You Need to Do
+- Use `curl` to check website status
+- Fetch headers
+
+### Deliverables
+- curl output
+
+### Interview Connect
+- How do you test APIs from server?
+
+---
+
+## Task 13 – wget Usage
+
+### Objective
+Download files on Linux.
+
+### What You Need to Do
+- Download a file using `wget`
+- Verify download
+
+### Deliverables
+- Download proof
+
+### Interview Connect
+- wget vs curl?
+
+---
+
+## Task 14 – Process Listing
+
+### Objective
+View running processes.
+
+### What You Need to Do
+- Use `ps`
+- Use `top` or `htop`
+
+### Deliverables
+- Process outputs
+
+### Interview Connect
+- How do you find high CPU processes?
+
+---
+
+## Task 15 – Process Control
+
+### Objective
+Manage running processes.
+
+### What You Need to Do
+- Run process in background
+- Kill process gracefully
+- Kill process forcefully
+
+### Deliverables
+- Kill command proof
+
+### Interview Connect
+- kill vs kill -9?
+
+---
+
+## Task 16 – Disk Usage Analysis
+
+### Objective
+Analyze disk usage.
+
+### What You Need to Do
+- Use `df`
+- Use `du`
+- Identify large directories
+
+### Deliverables
+- Disk usage output
+
+### Interview Connect
+- How do you debug disk full issues?
+
+---
+
+## Task 17 – Disk Mounting
+
+### Objective
+Work with disks and filesystems.
+
+### What You Need to Do
+- Mount a filesystem
+- Unmount it
+
+### Deliverables
+- Mount output
+
+### Interview Connect
+- What is mounting?
+
+---
+
+## Task 18 – Persistent Mounts
+
+### Objective
+Persist disk mounts.
+
+### What You Need to Do
+- Configure `/etc/fstab`
+- Verify persistent mount
+
+### Deliverables
+- fstab entry proof
+
+### Interview Connect
+- Why persistent mounts matter?
+
+---
+
+## Task 19 – NFS Setup
+
+### Objective
+Share storage across servers.
+
+### What You Need to Do
+- Configure NFS server
+- Configure NFS client
+
+### Deliverables
+- NFS mount proof
+
+### Interview Connect
+- When is NFS used?
+
+---
+
+## Task 20 – Linux Networking Basics
+
+### Objective
+Understand network configuration.
+
+### What You Need to Do
+- Check IP address
+- Check interfaces
+- Check open ports
+
+### Deliverables
+- Networking output
+
+### Interview Connect
+- How do you debug network issues?
+
+---
+
+## Task 21 – DNS & Connectivity
+
+### Objective
+Understand name resolution.
+
+### What You Need to Do
+- Use `ping`
+- Use `nslookup` or `dig`
+- Test DNS resolution
+
+### Deliverables
+- DNS lookup output
+
+### Interview Connect
+- What happens when you hit a URL?
+
+---
+
+## Task 22 – Firewall Management (UFW)
+
+### Objective
+Secure Linux servers.
+
+### What You Need to Do
+- Install and enable UFW
+- Allow SSH, HTTP, HTTPS
+- Deny unused port
+
+### Deliverables
+- UFW rules output
+
+### Interview Connect
+- Firewall vs security group?
+
+---
+
+## Task 23 – Linux Error: Permission Denied
+
+### Objective
+Fix permission issues.
+
+### What You Need to Do
+- Create permission denied scenario
+- Fix using correct permissions
+
+### Deliverables
 - Error and fix proof
-- Sticky bit verification
 
 ### Interview Connect
-Be ready to answer:
-- How does Linux permission model work?
-- What causes permission denied issues in production?
+- Why permission issues occur?
 
 ---
 
-## Task 5 – Package Management & Networking Basics
+## Task 24 – Linux Error: Resource Issue
 
 ### Objective
-Install software and validate network connectivity on Linux systems.
+Troubleshoot resource issues.
 
 ### What You Need to Do
-- Install and remove a package using `apt` or `yum`
-- Verify repository configuration
-- Check IP address and network interfaces
-- Identify open ports
-- Test external connectivity and DNS resolution
-
-### Deliverables
-- Package installation/removal output
-- Network command outputs
-
-### Interview Connect
-Be ready to answer:
-- How does a package manager resolve dependencies?
-- What happens when you access a website from a server?
-
----
-
-## Task 6 – Shell Scripting Automation
-
-### Objective
-Automate operational tasks using shell scripting.
-
-### What You Need to Do
-- Write a shell script to:
-  - Check website availability
-  - Log HTTP status with timestamp
-- Add conditions for UP / DOWN status
-- Schedule the script using `cron`
-- Simulate a failure scenario
-
-### Deliverables
-- Shell script file
-- Log file output
-- Cron job configuration
-
-### Interview Connect
-Be ready to answer:
-- How do you automate monitoring tasks?
-- Difference between `curl` and `wget`?
-
----
-
-## Task 7 – Linux Troubleshooting
-
-### Objective
-Develop a troubleshooting mindset for Linux production issues.
-
-### What You Need to Do
-Troubleshoot **any three** of the following:
+Fix **any one**:
+- High CPU usage
+- High memory usage
 - Disk full issue
-- Permission denied error
-- Service not running
-- High CPU or memory usage
-- Network connectivity issue
-
-For each issue:
-- Show the problem
-- Diagnose using commands
-- Apply a fix
 
 ### Deliverables
-- Issue, diagnosis, and fix outputs
-- Commands used
+- Before/after proof
 
 ### Interview Connect
-Be ready to answer:
-- How do you approach Linux troubleshooting?
-- What is your first step when a service goes down?
+- How do you approach production issues?
+
+---
+
+## Task 25 – Shell Scripting & Automation
+
+### Objective
+Automate operational tasks.
+
+### What You Need to Do
+- Write a shell script using:
+  - Variables
+  - Conditions
+  - Loops
+- Monitor website or service
+- Schedule script using cron
+
+### Deliverables
+- Script file
+- Cron job proof
+
+### Interview Connect
+- Why automation is critical in DevOps?
 
 ---
 
